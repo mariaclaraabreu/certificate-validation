@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <title>Nuvem de palavras</title>
+</head>
+
+<script>
+
+  var codigos = ['Me8CNw3Z','BxRCOw80','IQ0PK4x1','y4p3tKI6','pH9333R5','pk85W6wf','NluZfiPT','c6MLGWIw',
+  'eHpYB7Tq','hRm4OYad','9L2ftI0M','ECYLZh83','pnQqlkYJ','3AEIZelZ','pe4amtmr','xB3Mj1FO','fX6G8TQ2',
+  'UUAuzmJf','GE5szial','kTzJL5Zq','RWyQpEJB','ZKwOx6t3','ApmzNDbz','YP9jKYPd','tEuaI4ci','EOx2KgwK',
+  'LZAacbP0','rOa2nqUY','uGz4AQcF','gO8qwt28','I2ZlTocB','423hiO5S','WuMWBpci','5aOrJHpS','AF4TuWUo',
+  'OOLxdHGz','2TL4Aod5','FsmP0Si0','ZdJJ0fyE','tA2NI9DB'];
+
+  function validation(){
+    var cod = document.getElementById("inp");
+    
+    var verif = codigos.includes(cod.value); 
+    if (verif == true) { 
+      alert('Este certificado é VÁLIDO!!!');
+    } else if( verif == false){
+      alert('Este certificado NÃO é válido!!!');
+    }
+
+//     var elemento_pai = document.body;
+
+// // Criar elemento
+// var titulo = document.createElement('h1');
+
+// // Criar o nó de texto
+// var texto = document.createTextNode("Um título qualquer");
+
+// // Anexar o nó de texto ao elemento h1
+// titulo.appendChild(texto);
+
+
+// Agora sim, inserir (anexar) o elemento filho (titulo) ao elemento pai (body)
+// elemento_pai.appendChild(titulo);
+//     var titulo = document.createElement('h1');
+// var texto  = document.createTextNode("Um título qualquer");
+// titulo.appendChild(texto);
+  //   var cod = document.getElementsByTagName('input');
+  //   var verif = codigos.includes(cod); 
+  //   var aviso = document.createElement("h3"); 
+  //   if (verif == true) {      
+  //     var conteudoAviso = document.createTextNode("Este certificado é válido!"); 
+  //     aviso.appendChild(conteudoAviso); //adiciona o nó de texto à nova div criada 
+
+  // // adiciona o novo elemento criado e seu conteúdo ao DOM 
+  //     var divBox = document.getElementsByTagName("form"); 
+  //     divBox.appendChild(aviso);
+  //     // document.body.insertAdjacentElement(aviso1, divBox); 
+  //   } else if (verif == false) {
+  //       var conteudoAviso = document.createTextNode("Este certificado NÃO é válido!"); 
+  //       aviso.appendChild(conteudoAviso); //adiciona o nó de texto à nova div criada 
+
+  //   // adiciona o novo elemento criado e seu conteúdo ao DOM 
+  //       var divBox = document.getElementsByClassName("form"); 
+  //       divBox.appendChild(aviso);
+  //       // document.body.insertAdjacentElement(aviso1, divBox); 
+
+    }
+   
+  
+
+  function test (){
+    alert('Seja bem vindo(a) ao Linha de Código.');
+  }
+
+</script>
+
+<body>
+
+
+  <div class="container">
+    <div class="box">
+      <div class="conteudo-box">
+        <img src="logocepaph.png" alt="" class="logo">
+        <h2>Validador de certificado</h2>
+        <p>Digite o código contido na lateral do <b>QRCode</b> do seu certificado:</p>
+        <form class="form" action="">
+          <input id="inp" placeholder="Código" />
+          <button onclick="validation()" type="submit">Validar</button>
+          
+
+
+        </form>
+        
+      </div>
+      
+    </div>
+  
+  
+  
+
+</div>
+  
+    
+
+
+
+
+ 
+</body>
+</html>
